@@ -1,4 +1,3 @@
-import .env from 
 export class API{
 
     static loginUser(body){
