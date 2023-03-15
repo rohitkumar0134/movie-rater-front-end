@@ -14,7 +14,7 @@ function MovieDetails(props) {
     const [token] = useCookies(['mr-token']);
     
     const rateClicked=rate=>evt=>{
-        fetch(`${process.env.REACT_APP_API_URL}/api/movie/${mov.id}/rate_movie/`,{
+        fetch(`${process.env.REACT_APP_API_URL}/api/movies/${mov.id}/rate_movie/`,{
             method:'Post',
             headers:{
               'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function MovieDetails(props) {
 
 
     const getDetails=()=>{
-        fetch(`${process.env.REACT_APP_API_URL}/api/movie/${mov.id}/`,{
+        fetch(`${process.env.REACT_APP_API_URL}/api/movies/${mov.id}/`,{
             method:'GET',
             headers:{
               'Content-Type': 'application/json',
