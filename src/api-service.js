@@ -1,4 +1,3 @@
-const REACT_APP_API_URL='https://course-django-react-api-production.up.railway.app'
 export class API{
 
     static loginUser(body){
