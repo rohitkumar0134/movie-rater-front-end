@@ -14,7 +14,7 @@ function MovieDetails(props){
     setHighlighted(high);
   }
   const rateClicked = rate => evt => {
-    fetch(`http://127.0.0.1:8000/api/movies/${mov.id}/rate_movie/`, {
+    fetch(`https://course-django-react-api-production.up.railway.app/api/movies/${mov.id}/rate_movie/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
