@@ -14,7 +14,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [editedMovie, setEditedMovie] = useState(null);
-  const [token, deleteToken] = useCookies(['mr-token']);
+  const [token, setToken, deleteToken] = useCookies(['mr-token']);
   const [data, loading, error] = useFetch();
 
 

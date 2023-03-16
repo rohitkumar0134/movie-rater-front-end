@@ -26,7 +26,7 @@ function MovieDetails(props){
     .catch( error => console.log(error))
   }
   const getDetails = () => {
-    fetch(`http://127.0.0.1:8000/api/movies/${mov.id}/`, {
+    fetch(`https://course-django-react-api-production.up.railway.app/api/movies/${mov.id}/`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
